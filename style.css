@@ -1,0 +1,270 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: "lato" , sans-serif;
+    
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 10px;
+}
+
+.navbar h1{
+    font-size: 30px;
+    font-weight: 300;
+    margin: 10px 0;
+    line-height: 1.2;
+}
+h1{
+    font-weight: 300;
+    margin: 10px 0;
+    line-height: 1.2;
+}
+img{
+    width: 100%;
+}
+li{
+    list-style-type: none;
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 1200px;
+    overflow: visible;
+}
+.navbar{
+    background-color: purple;
+    height: 70px;
+    padding: 0 30px;
+    color: white;
+}
+.navbar a:hover{
+    color:#9867C5;
+    border-bottom: 3px solid #9867C5;
+}
+
+.navbar .flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+.navbar ul{
+    display: flex;
+}
+form{
+    padding: 10px 0;
+    margin: auto;
+}
+.showcase{
+    height: 25%;
+    background-color: purple;
+    color: white;
+}
+.showcase img{
+    box-shadow:  7px 7px 7px rgba(0,0,0,0.2);
+    background-color: white;
+}
+
+.grid{
+    overflow: visible;
+    display: grid;
+    grid-template-columns:  60% 40%;
+}
+.grid-item-1, .grid-item-2{
+    position: relative;
+    top:10%;
+}
+.showcase input[type='email']{
+    padding: 10px 70px 10px 6px;
+    font-size: 14px;
+    border: none;
+    border-radius: 6px;
+}
+.btn{
+    border-radius: 6px;
+    padding: 12px 20px;
+    background: #9867C5 ;
+    border: none;
+    margin-left: 10px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+.little-info{
+    font-family: 'poppins', sans-serif;
+    margin-top: 10px;
+}
+.lower-container{
+    margin:120px auto;
+    padding: 0;
+    max-width: 1400px;
+}
+.title{
+    font-size: 20px;
+    text-align: left;
+    padding: 10px 0 ;
+}
+.text{
+    font-size: 19px;
+    width: 100%;
+    padding: 10px;
+    margin: 0, 20px;
+    text-align: justify;
+}
+.flex{
+    display: flex;
+    justify-content: space-around;
+}
+.stats{
+    padding: 1% 0.5%;
+    text-align: center;
+}
+.stat{
+    margin: 0 1%;
+    text-align: center;
+    width: 800px;
+}
+.stats .fas{
+    color: purple;
+}
+.testimonial{
+    padding: 40px;
+}
+.testimonial img{
+  width: 100%;
+    clip-path: circle();
+    align-content: center;
+}
+.testimonial h3{
+    text-align: center;
+}
+.grid-3{
+    display: grid;
+    grid-template-columns:  repeat(3,1fr);
+    gap: 40px;
+}
+.card{
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow:  -7px -7px 20px rgba(0, 0, 0, 0.2),
+    7px  7px 20px rgba(0, 0, 0, 0.2);
+}
+.circle{
+    background-color: transparent;
+    border: 3px solid purple;
+    height: 90px;
+    position: relative;
+    top: -30px;
+    left: 120px;
+    border: 120px;
+    border-radius: 50%;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+    width:90px;
+}
+footer{
+    background-color: purple;
+    padding: 20px 10px;
+    color: white;
+}
+footer .container{
+    display: flex;
+    justify-content: space-around;
+}
+footer a{
+    color: white;
+    margin: 0 10px;
+}
+footer a{
+    text-decoration: none;
+}
+footer a:hover{
+    color:#9867C5;
+    border-bottom: 3px solid #9867C5;
+}
+.links ul>li{
+    padding: 5px;
+}
+@media(max-width:768px){
+    .grid, .grid-3{
+        grid-template-columns: 1fr;
+    }
+   .showcase{
+    height: auto;
+    text-align: center;
+   }
+   .image{
+    width: 70%;
+    margin: 0 auto;
+   }
+   .stats .flex{
+    flex-direction: column;
+   }
+   .stat{
+    width: 100%;
+    padding: auto;
+   }
+   .circle{
+    border: 3px solid purple;
+    position: relative;
+    top: -30px;
+    width: 90px;
+   }  
+   .card h3{
+    margin-bottom: 10px;
+   }
+   footer .container{
+    display: flex;
+    justify-content: space-around;
+   }
+   .stats{
+    padding: 0 8%;
+   }
+   .stat{
+    padding: 1%;
+   }
+}
+@media(max-width:470px){
+    .navbar{
+        height: 100px;
+    }
+    .navbar a:hover{
+        border-bottom: 2px solid black;
+    }
+    .showcase{
+        height: auto;
+    }
+    .stat{
+        margin-bottom: 10%;
+    }
+    footer .container{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: auto;
+        padding: auto;
+    }
+    footer .container div , nav {
+        padding: 12px 0;
+    }
+    
+}
+.lato-regular {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lato-regular-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
